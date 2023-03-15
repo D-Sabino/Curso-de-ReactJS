@@ -13,8 +13,9 @@
 (SEM COMANDOS AQUI, POR ENQUANTO)
 ```
 
-####Plug-ins utilizados no VS Code
-ES7+ React/Redux/React-Native snippets - v4.4.3 (dsznajder)
+
+<br><h3>Plug-ins utilizados no VS Code:<h3>
+- ES7+ React/Redux/React-Native snippets - v4.4.3 (dsznajder)
 
 ## Módulos:
 - [ ] Conheça na pratica o ReactJS <br>
