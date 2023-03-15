@@ -13,8 +13,7 @@
 (SEM COMANDOS AQUI, POR ENQUANTO)
 ```
 
-
-<br><h3>Plug-ins utilizados no VS Code:<h3>
+<h3>Plug-ins utilizados no VS Code:<h3>
 - ES7+ React/Redux/React-Native snippets - v4.4.3 (dsznajder)
 
 ## Módulos:
