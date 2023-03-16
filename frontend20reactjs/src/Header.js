@@ -1,13 +1,13 @@
-//import './App.css';
+import './Header.css';
 
 function Header(props) {
   return (
     <div className="Header">
-        <div className="Header__logo">
+        <div className="headerLogo">
             <h2>Empresa</h2>
         </div>
 
-        <div className="Header__menu">
+        <div className="headerMenu">
             <a href="">Home</a>
             <a href="">Sobre</a>
         </div>
