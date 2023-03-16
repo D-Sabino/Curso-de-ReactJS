@@ -10,7 +10,7 @@
 #### Após clonar o repositório realize os seguintes processos:
 
 ```bash
-(SEM COMANDOS AQUI, POR ENQUANTO)
+(SEM COMANDOS, POR ENQUANTO)
 ```
 
 <h3>Plug-ins utilizados no VS Code:<h3>
