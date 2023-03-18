@@ -1,4 +1,6 @@
 /*
+
+//Hooks de estado
 import React, { useStatez } from "react";
 
 function App(){
@@ -25,7 +27,8 @@ function App(){
 export default App;
 */
 
-
+/*
+//Hooks de efeito
 import React, { useState, useEffect } from "react";
 
 export default function App(){
@@ -43,4 +46,35 @@ export default function App(){
       </button>
     </div>
   );
+}
+*/
+
+import React, { useState, useEffect } from "react";
+
+export default function App(){
+  const [count, setCount] = useState(0);
+  const [nome, setNome] = useState("Daniel");
+  
+
+  function callAlert(){}
+
+  useEffect(() => {
+    callAlert();
+  },[]);
+
+  //Renderização condicional
+  return(
+    <div>
+      {
+        (nome == "Daniel")?
+          <div>
+            <p>{nome}</p>
+          </div>:
+          <div>
+            <p>É preciso o nome de Daniel</p>
+          </div>
+      }
+    </div>
+  );
+  
 }
