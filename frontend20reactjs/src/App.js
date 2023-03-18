@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/*
+import React, { useStatez } from "react";
 
 function App(){
   //Declare uma nova variavel de state, a qual chamaremos de "count"
@@ -22,3 +23,24 @@ function App(){
 }
 
 export default App;
+*/
+
+
+import React, { useState, useEffect } from "react";
+
+export default function App(){
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `Você clicou ${count} vezes`; //Atualiza o titulo da pagina
+  });
+
+  return(
+    <div>
+      <p>Você clicou {count} vezes</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
