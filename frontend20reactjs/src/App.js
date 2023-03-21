@@ -49,6 +49,7 @@ export default function App(){
 }
 */
 
+/*
 import React, { useState, useEffect } from "react";
 
 export default function App(){
@@ -74,6 +75,50 @@ export default function App(){
             <p>É preciso o nome de Daniel</p>
           </div>
       }
+    </div>
+  );
+  
+}
+*/
+
+//Simulando um relogio
+import React, { useState, useEffect } from "react";
+
+export default function App(){
+  const[hora,setHora] = useState(0);
+  const[minuto,setMinuto] = useState(0);
+  const[segundo, setSegundo] = useState(0);
+
+  //function callAlert(){}
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+
+      setSegundo(segundo+1);
+      if(segundo == 59){
+        setSegundo(0);
+      
+        if(minuto == 59){
+          setMinuto(0);
+          setHora((hora+1) % 24);
+        
+        }
+        else{
+          setMinuto(minuto + 1);
+        }
+         
+      }
+      else{
+        setSegundo(segundo + 1);
+      }
+    }, 1000);
+    return() => clearInterval(interval);
+
+  });
+
+  return(
+    <div>
+      <h2 style={{textAlign:'center'}}>{hora}:{minuto}:{segundo}</h2>
     </div>
   );
   
