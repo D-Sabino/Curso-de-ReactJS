@@ -17,7 +17,7 @@ npm install axios
 - ES7+ React/Redux/React-Native snippets - v4.4.3 (dsznajder)
 
 ## Módulos:
-- [ ] Conheça na pratica o ReactJS <br>
+- [x] Conheça na pratica o ReactJS <br>
 - [ ] Criando suas Builds e Hospedagem para ReactJS <br>
 - [ ] App de Previsão de Tempo com ReactJS <br>
 - [ ] Projeto pratico WhatsApp Clone (ReactJS e Firebase) [em andamento]
