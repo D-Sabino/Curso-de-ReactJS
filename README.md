@@ -11,6 +11,7 @@
 
 ```bash
 npm install axios
+npm run build
 ```
 
 <h3>Plug-ins utilizados no VS Code:<h3>
