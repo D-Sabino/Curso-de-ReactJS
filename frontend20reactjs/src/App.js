@@ -81,6 +81,7 @@ export default function App(){
 }
 */
 
+/*
 //Simulando um relogio
 import React, { useState, useEffect } from "react";
 
@@ -88,8 +89,6 @@ export default function App(){
   const[hora,setHora] = useState(0);
   const[minuto,setMinuto] = useState(0);
   const[segundo, setSegundo] = useState(0);
-
-  //function callAlert(){}
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -119,6 +118,49 @@ export default function App(){
   return(
     <div>
       <h2 style={{textAlign:'center'}}>{hora}:{minuto}:{segundo}</h2>
+    </div>
+  );
+  
+}
+*/
+
+import React, { useState, useEffect } from "react";
+import Api from './Api';
+
+export default function App(){
+  const [nomes, setNomes] = useState([]);
+
+
+  async function initApi(){
+    let pegaNomes = await Api.getPersons();
+    setNomes(pegaNomes);
+  }
+
+  useEffect(() => {
+    /*
+    axios.get('https://jsonplaceholder.typicode.com/users')
+    .then(res => {
+      console.log(res.data);
+      setNomes(res.data);
+
+    })
+    */
+
+    initApi();
+    
+  });
+
+  return(
+    <div>
+      {
+        nomes.map(function(data){
+          return(
+            <div>
+              <h2>{data.name} | {data.email}</h2>
+            </div>
+          )
+        })
+      }
     </div>
   );
   

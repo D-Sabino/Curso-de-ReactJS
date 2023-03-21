@@ -10,7 +10,7 @@
 #### Após clonar o repositório realize os seguintes processos:
 
 ```bash
-(SEM COMANDOS, POR ENQUANTO)
+npm install axios
 ```
 
 <h3>Plug-ins utilizados no VS Code:<h3>
