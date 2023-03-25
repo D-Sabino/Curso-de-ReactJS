@@ -37,5 +37,5 @@ O plugin <strong>ES7+ React/Redux/React-Native snippets, desenvolvido por dsznaj
 ## Módulos:
 - [x] Conheça na pratica o ReactJS <br>
 - [x] Criando suas Builds e Hospedagem para ReactJS <br>
-- [ ] App de Previsão de Tempo com ReactJS <br>
+- [x] App de Previsão de Tempo com ReactJS <br>
 - [ ] Projeto pratico WhatsApp Clone (ReactJS e Firebase) [em andamento]
